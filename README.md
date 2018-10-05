@@ -1,5 +1,8 @@
 # pusher-php-server
-Vendor source for Pusher PHP Server
+You can also take it through composer by run this command
+```
+composer require pusher/pusher-php-server
+```
 
 ## Usage
 ```
@@ -17,7 +20,7 @@ Vendor source for Pusher PHP Server
     $options
   );
 
-  // Send some message
+  // Send a message
   $data['message'] = 'hello world';
   $pusher->trigger('my-channel', 'my-event', $data);
 ?>
